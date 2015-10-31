@@ -14,10 +14,11 @@ $(function(){
       $('ul').html('');
        data.Search.forEach(function (movie) {
         if (movie.Poster!== "N/A"){
-         $('ul').append('<img src="'+movie.Poster+' "/>');
-        } else {
-         $('ul').append('<li> Movie Title: '+ movie.Title + '</li>');            
+         $('ul').append('<a href="http://www.imdb.com/title/'+movie.imdbID+'/"> <img src="'+movie.Poster+' " /> </a>') 
         }
+        // else {
+        //  $('ul').append('<li> Movie Title: '+ movie.Title + '</li>');            
+        // }
        });
     });
     promise.error(function(error) {
