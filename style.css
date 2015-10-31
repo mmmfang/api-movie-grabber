@@ -10,9 +10,24 @@ h1 {
 	margin-bottom: 0px;
 }
 
+div {
+	-webkit-animation-name: title; 
+	-webkit-animation-duration: 4s;
+}
+
+@keyframes title {
+    from {color: black;}
+    to {color: green;}
+}
+
+
 h3 {
 	text-align: center;
-	color: darkgrey;
+	color: grey;
+}
+
+h4 {
+	color:darkgrey;
 }
 
 li {
